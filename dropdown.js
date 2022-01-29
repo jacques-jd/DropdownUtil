@@ -9,8 +9,8 @@
 let dropdown = {
     target: 'dropdown',
     trigger: 'droptrigger',
-    opened: '⮟',
-    unopened: '⮞',
+    opened: '\u25BE',
+    unopened: '\u25B8',
     hoverable: true,
 };
 
