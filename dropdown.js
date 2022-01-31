@@ -35,6 +35,7 @@ window.addEventListener("load", event =>
         ddp.trigger.innerHTML = `${ddp.trigger.innerHTML} ${dropdown.unopened}`;
         ddp.trigger.style.cursor = "pointer";
         ddp.target.style.zIndex = "3";
+        ddp.target.style.transformOrigin = "50% 0%";
 
         dropdown.open = dd =>
         {
@@ -86,8 +87,6 @@ window.addEventListener("load", event =>
         setTimeout(ddp => {
             ddp.target.style.transition = "transform 0.2s";
         }, 200, ddp);
-
-        //this line adds the transition. comment out if you don't want transition.
 
         if (dropdown.hoverable) 
         {
