@@ -40,13 +40,10 @@ window.addEventListener("load", event =>
         dropdown.open = dd =>
         {
             dd.target.style.display = "block";
-            
+
             setTimeout(dd=>{
-                if(!dd.hover)
-                {
-                    dd.target.style.transform = 'scaleY(1)';
-                    dd.target.style.height = 'auto';
-                }
+                dd.target.style.transform = 'scaleY(1)';
+                dd.target.style.height = 'auto';
             }, 1, dd);
 
             dd.trigger.innerHTML = dd.trigger.innerHTML.replace(dropdown.unopened, dropdown.opened);
