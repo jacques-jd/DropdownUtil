@@ -39,7 +39,7 @@ window.addEventListener("load", event =>
 
         dropdown.open = dd =>
         {
-            dd.target.style.visibility = "visible";
+            dd.target.style.display = "block";
             dd.target.style.transform = 'scaleY(1)';
             dd.target.style.height = 'auto';
 
@@ -56,7 +56,7 @@ window.addEventListener("load", event =>
                 if(!dd.hover)
                 {
                     dd.target.style.height = '0';
-                    dd.target.style.visibility = "hidden";
+                    dd.target.style.display = "none";
                 }
             }, 200, dd);
             
