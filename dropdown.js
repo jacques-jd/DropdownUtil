@@ -34,6 +34,7 @@ window.addEventListener("load", event =>
         //this line adds the indicators. Modify if you want it in a different format.
         ddp.trigger.innerHTML = `${ddp.trigger.innerHTML} ${dropdown.unopened}`;
         ddp.trigger.style.cursor = "pointer";
+        ddp.target.style.zIndex = "3";
 
         dropdown.open = dd =>
         {
