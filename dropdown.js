@@ -85,10 +85,12 @@ window.addEventListener("load", event =>
         //this line hides them and makes them 0 height by default
         dropdown.close(ddp);
         ddp.target.style.position = "absolute";
-        //set left and top to the dd.trigger's left and right
-        ddp.target.style.left = `${ddp.trigger.getBoundingClientRect().left}px`;
-        ddp.target.style.top = `${ddp.trigger.getBoundingClientRect().bottom}px`;
         
+        //set left and top to the dd.trigger's left and right
+        if(!ddp.target.classList.contains("theme")) {
+            ddp.target.style.left = `${ddp.trigger.getBoundingClientRect().left}px`;
+            ddp.target.style.top = `${ddp.trigger.getBoundingClientRect().bottom}px`;
+        }
 
         //prevents it from flashing when loading screen
         setTimeout(ddp => {
